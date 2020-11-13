@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1605288064 source:c:\programowanie\kalkulator\main.cpp
+	<iostream>
+	<cmath>
+	<conio.h>
+	<cstdlib>
+
