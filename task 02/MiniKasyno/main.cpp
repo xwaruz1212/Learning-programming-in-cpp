@@ -16,12 +16,17 @@ int main()
     int (liczba_trafien = 0);
     srand(time(NULL));
 
-    cout << "Witaj w totolotku! Wpisz 4 liczby od 1-99: \a" << endl;
+    cout << "Witaj w MiniKasynie! Podaj 4 liczby w zakresie 0-1:" << endl;
 
     for(int i=0; i<4; i++)
     {
         cout<< " Podaj "  << i+1 <<  " liczbe : \n";
         cin>> zgadywane [i];
+        while (zgadywane [i] != (0|| 1))
+        {
+            cout<< "Liczba musi byc w przedziale 0-1...\n Sprobuj jeszcze raz: ";
+            cin>> zgadywane [i];
+        }
     }
 
 
@@ -31,7 +36,7 @@ int main()
     Sleep(3000);
     for (int i=0; i<4; i++)
     {
-        losowane [i]=rand()%100+1;
+        losowane [i]=rand()%1;
         cout<< losowane[i]<< endl;
 
         if (zgadywane[i] == losowane[i])
