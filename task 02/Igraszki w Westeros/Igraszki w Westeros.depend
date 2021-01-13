@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1610544759 source:c:\github repozytoria\learning-programming-in-cpp\task 02\igraszki w westeros\main.cpp
+	<iostream>
+	<windows.h>
+	<time.h>
+	<cstdlib>
+
