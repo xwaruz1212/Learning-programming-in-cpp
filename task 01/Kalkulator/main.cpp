@@ -5,7 +5,7 @@
 
 using namespace std;
 
-string przycisk;
+string button;
 
 
 double add(double a, double b)
@@ -28,7 +28,7 @@ double divi(double a, double b)
 {
     if(b==0)
     {
-        cout <<"nie mozna dzielic przez 0" << endl;
+        cout <<"Cannot divide by 0" << endl;
         return 0;
     }
     return a/b;
@@ -36,7 +36,7 @@ double divi(double a, double b)
 
 
 
-double kalkulator(double a,double b,int menu)
+double calculator(double a,double b,int menu)
 {
     switch(menu)
     {
@@ -76,43 +76,38 @@ int main()
     {
         int menu;
         double a, b;
-      cout  << " 1) dodawanie\n"
-            << " 2) odejmowanie\n"
-            << " 3) mnozenie\n"
-            << " 4) dzielenie\n"
-            << " 5) potegowanie\n"
-            << " 6) logarytm \n"
-            << " 7) pierwiastkowanie\n" << endl;
-       cout << "wybierz operacje:\n";
+      cout  << " 1) addition\n"
+            << " 2) subtraction\n"
+            << " 3) multiplication\n"
+            << " 4) division\n"
+            << " 5) exponentiation\n"
+            << " 6) logarithm \n"
+            << " 7) extraction of a root\n" << endl;
+       cout << "choose action:\n";
        cin >> menu;
 
         if (menu!=6)
         {
-        cout << "podaj dwie liczby: \n";
+        cout << "Enter two numbers: \n";
         cin >> a >> b;
-        cout << kalkulator(a, b, menu) << endl;
+        cout << calculator(a, b, menu) << endl;
         }
         else if (menu==6)
-{       cout << "podaj jedna liczbe:";
+{       cout << "Enter one number:";
         cin >> a;
-        cout << kalkulator(a,b,menu) << endl;
+        cout << calculator(a,b,menu) << endl;
 
 
-        cout << "Jesli chcesz kontynuowac wcisnij dowolny przycisk, a jesli wyjsc wcisnij y \n";
-        cin >> przycisk;
-        if (przycisk=="y")
+        cout << "If you want to continue press any button, if you want to quit press y \n";
+        cin >> button;
+        if (button=="y")
             w = false;
 
     }
 
 
 
-    // zadanie  domowe
-    /*
-    a) przerob kod, tak aby w pierwszej kolejnosci nalezalo wybrac operacje, a nastepnie podawalo liczby.
-    b) W przypadku podawania logarytmu lub pierwiastkowania ma byc podana jedna liczba !
-    c) Zamien typ liczb na double zeby obliczenia byly bardziej precyzyjne.
-    d*) zaloz konto na serwisie github i sprawdz czy masz git na laptopie, jesli nie to zainstaluj (uwaga git!= github!!) */
+
 }}
 
 
